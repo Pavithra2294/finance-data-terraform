@@ -8,7 +8,7 @@ resource "aws_s3_bucket" "source-data-bucket-pre" {
 resource "aws_s3_object" "source-data-bucket-pre" {
   bucket = aws_s3_bucket.source-data-bucket-pre.id
   key    = "sample_financial_data_100_extended.csv"           
-  source = "C:/Users/ashok/OneDrive/Desktop/finance-data-terraform/sample_financial_data_100_extended.csv" 
+  source = "C:/Users/ashok/OneDrive/Desktop/finance-data-terraform/sample_financial_data_100_extended.csv"
 }
 
 # S3 Bucket for Traget 
@@ -28,6 +28,7 @@ resource "aws_s3_object" "glue-code-bucket-pre" {
   key    = "finance_data.py"           
   source = "C:/Users/ashok/OneDrive/Desktop/finance-data-terraform/finance_data.py" 
 }
+
 
 
 
