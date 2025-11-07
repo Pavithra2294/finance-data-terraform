@@ -1,5 +1,6 @@
 name: 'Terraform Plan and Apply'
 
+
 on:
   push:
     branches:
